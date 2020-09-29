@@ -268,7 +268,7 @@ h2 {
     margin-left: 10%;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
     .img-banner-2-2 {
         display: none;
     }

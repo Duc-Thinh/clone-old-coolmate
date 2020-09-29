@@ -203,7 +203,7 @@ a {
     background: black;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
     .wrap-card {
         flex-direction: column;
     }

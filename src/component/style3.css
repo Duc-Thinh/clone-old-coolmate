@@ -122,7 +122,7 @@
     background: black;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
     .imgRow {
         flex-direction: column;
     }

@@ -41,7 +41,7 @@
     width: 20px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
     .wrap-button {
         top: 15em;
         left: 10em ;
