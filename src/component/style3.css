@@ -1,0 +1,145 @@
+.imgRow {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-box {
+    width: 100%;
+    height: 100%;
+}
+
+.product-tittle {
+    width: 360px;
+    height: 412px;
+    position: relative;
+}
+
+.product-tittle:hover {
+    box-shadow: 0 10px 10px 0 #0003;
+    transition: all .3s;
+}
+
+.tittle {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.tittle > span:hover  {
+    color: #fa6400;
+    transition: all .2s;
+}
+
+.long-arow {
+    margin-left: 30px;  
+    width: 60px;
+    height: 16px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.long-arow:before {
+    content: '';
+    position: absolute;
+    border-left: 8px solid black;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    right: -9px;
+    top: 0;
+}
+
+.long-arow:after {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 2px;
+    top: 7px;
+}
+
+.body-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.slide-product {
+    color: #000;
+    font-weight: 400;
+    font-size: 32px;
+    border-bottom: 3px solid black; 
+}
+
+.a-slide-product {
+    margin-bottom: 50px;
+}
+
+.slide-show {
+    height: auto;
+    width: 1175px;
+    overflow: hidden;
+}
+
+.wrap-items {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.items-1 {
+    width: 300px;
+    height: 323px;   
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carousel-control-prev {
+    width: 25px !important;
+    height: 50px;
+    top: auto !important;
+    bottom: 200px !important;
+    background: black;
+}
+
+.carousel-control-next {
+    width: 25px !important;
+    height: 50px;
+    top: auto !important;
+    bottom: 200px !important;
+    background: black;
+}
+
+@media screen and (max-width: 415px) {
+    .imgRow {
+        flex-direction: column;
+    }
+
+    .product-tittle {
+        width: 100%;
+    }
+
+    .tittle {
+        color: #fa6400;
+    }
+
+    .a-slide-product {
+        display: none;
+    }
+
+    .slide-show {
+        display: none;
+    }
+}

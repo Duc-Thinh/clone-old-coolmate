@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.img-banner {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.img-active {
+    display: block;
+}
+
+.wrap-button {
+    position: absolute;
+    display: flex;
+    bottom: 1em;
+    left: 22%;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    background: #00000033;
+    transition: all .3s;
+}
+
+.button-active {
+    background: black;
+    width: 20px;
+}
+
+@media screen and (max-width: 415px) {
+    .wrap-button {
+        top: 15em;
+        left: 10em ;
+    }
+
+    .button {
+        border-radius: 50%;
+        width: 20px ;
+        height: 20px ;
+        border: 2px solid #fa6400 ;
+        background: white ;
+    }
+
+    .button-active {
+        background: #00000033 ;
+    }
+}
