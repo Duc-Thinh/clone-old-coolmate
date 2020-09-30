@@ -27,120 +27,19 @@ function App() {
   }
 
   return (
+    <Router>
       <div className="App">
-        <Router>
-          <div className="header">          
-              <div className="narbar">
-                  <a className="wrap-icon"> 
-                  <Link to="/">
-                      <img className="icon" src="https://coolmate.cdn.vccloud.vn/images/logo-coolmate.svg"/>
-                  </Link>
-                  </a>
-                  <div className={classNames("wrap-narbar", {'active-wrap-narbar': state.active })} onClick={dropDown}>
-                      <div className={classNames('menu-dropdown',{'active-display' : !state.active})}></div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}> 
-                              <a className={classNames('a', 'tag-a', {'active-display' : state.active})} > 
-                                    <Link to="/product">
-                                      SALES
-                                    </Link>
-                              </a>
-                          <ul className={classNames('ul',{'active-display' : state.active})}>
-                              <li className="li"> 
-                                  <a href="#">Coolmate Outlet, chỉ từ 39k</a>
-                                  <span className="span">NEW</span>
-                              </li>
-                          </ul>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}> 
-                          <a className={classNames('a',{'active-display' : state.active})} >
-                              TỦ ĐỒ COOLMATE
-                          </a>
-                          <span className="tag-span">Mới</span>
-                          <ul className={classNames('ul', 'tag-ul', {'active-display' : state.active})}>
-                              <li className="li"> 
-                                  <a href="#" >TỦ ĐỒ COOLMATE</a>
-                              </li>
-                              <li className="li"> 
-                                  <a href="#">TỰ TẠO TỦ ĐỒ CHO RIÊNG BẠN</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}>
-                          <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                              ÁO THUN
-                          </a>
-                          <div className="arow"></div>
-                          <ul className={classNames('ul',{'active-display' : state.active})}>
-                              <li className="li"> 
-                                  <a href="#" >ÁO POLO</a>
-                                  <span className="span">NEW</span>
-                              </li>
-                              <li className="li"> 
-                                  <a href="#">ÁO THỂ THAO NAM MAXCOOL</a>
-                              </li>
-                              <li className="li"> 
-                                  <a href="#">ÁO COTTON COMPACT PHIÊN BẢN PREMIUM</a>
-                                  <span className="span span-hot">HOT</span>
-                              </li>
-                              <li className="li"> 
-                                  <a href="#">ÁO THUN</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}>
-                          <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                              QUẦN
-                          </a>
-                          <div className="arow"></div>
-                          <ul className={classNames('ul', 'tag-ul', {'active-display' : state.active})}>
-                              <li className="li"> 
-                                  <a href="#" >QUẦN LÓT NAM</a>
-                              </li>
-                              <li className="li"> 
-                                  <a href="#">QUẦN SHORT, QUẦN ĐÙI</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}>
-                          <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                              TẤT VỚ
-                          </a>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}>
-                          <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                              PHỤ KIỆN
-                          </a>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}>
-                          <a href="#" className={classNames('a',{'active-display' : state.active})}>
-                              CHỌN SIZE
-                          </a>
-                      </div>
-                      <div className={classNames('wrap',{'active-display' : state.active})}>
-                          <a href="#" className={classNames('a',{'active-display' : state.active})}>
-                              MẶC ĐẸP SỐNG CHẤT
-                          </a>
-                          <span className="tag-span">Mới</span>
-                      </div>
-                  </div>
-                  <img src={Icon1} className="icon-1"/>
-                  <img src={Icon2} className="icon-1"/>
-                  <div className="wrap-icon-1">
-                      <img src={Icon3} className="icon-1-1"/>
-                      <span>Giỏ Hàng</span>
-                  </div>
-              </div>
-              <Switch>
-                <Route excat path="/">
-                  <Merge/>
-                </Route>
-                <Route excat path="/product">
-                  <Product/>
-                </Route>
-              </Switch>
-          </div>
-        </Router>
+        <Header/>
+        <Switch>
+          <Route exact path="/">
+            <Merge />
+          </Route>
+          <Route path="/product">
+            <Product />
+          </Route>
+        </Switch>
       </div>
+      </Router>
   );
 }
 
