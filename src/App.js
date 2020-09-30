@@ -31,19 +31,19 @@ function App() {
         <Router>
           <div className="header">          
               <div className="narbar">
+                  <a className="wrap-icon"> 
                   <Link to="/home">
-                      <a className="wrap-icon"> 
-                          <img className="icon" src="https://coolmate.cdn.vccloud.vn/images/logo-coolmate.svg"/>
-                      </a>
+                      <img className="icon" src="https://coolmate.cdn.vccloud.vn/images/logo-coolmate.svg"/>
                   </Link>
+                  </a>
                   <div className={classNames("wrap-narbar", {'active-wrap-narbar': state.active })} onClick={dropDown}>
                       <div className={classNames('menu-dropdown',{'active-display' : !state.active})}></div>
                       <div className={classNames('wrap',{'active-display' : state.active})}> 
-                          <Link to="/product">
                               <a className={classNames('a', 'tag-a', {'active-display' : state.active})} > 
+                                    <Link to="/product">
                                       SALES
+                                    </Link>
                               </a>
-                          </Link>
                           <ul className={classNames('ul',{'active-display' : state.active})}>
                               <li className="li"> 
                                   <a href="#">Coolmate Outlet, chỉ từ 39k</a>
