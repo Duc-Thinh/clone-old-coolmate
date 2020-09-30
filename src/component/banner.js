@@ -29,13 +29,11 @@ export default () => {
     })
 
     return (
-        <a href="#">
-            <div className="banner">
-            {slideBanner}
-                <div className="wrap-button">
-                    {button}
-                </div>
+        <div className="banner">
+        {slideBanner}
+            <div className="wrap-button">
+                {button}
             </div>
-        </a>
+        </div>
     )
 }
