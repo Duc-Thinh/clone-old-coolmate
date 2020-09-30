@@ -32,7 +32,7 @@ function App() {
           <div className="header">          
               <div className="narbar">
                   <a className="wrap-icon"> 
-                  <Link to="/home">
+                  <Link to="/">
                       <img className="icon" src="https://coolmate.cdn.vccloud.vn/images/logo-coolmate.svg"/>
                   </Link>
                   </a>
@@ -131,7 +131,7 @@ function App() {
                   </div>
               </div>
               <Switch>
-                <Route excat path="/home">
+                <Route excat path="/">
                   <Merge/>
                 </Route>
                 <Route excat path="/product">
