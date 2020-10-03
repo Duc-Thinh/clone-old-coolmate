@@ -8,6 +8,7 @@ import Icon2 from "./icon/icon2.png"
 import Icon3 from "./icon/icon3.png"
 import classNames from 'classnames'
 import Banner from './component/banner'
+import End from './component/end'
 
 import {
   BrowserRouter as Router,
@@ -17,14 +18,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-
-  const [state, setState] = useState({active: false})
-
-  function dropDown(){
-      return(
-          setState({active: !state.active})
-      )
-  }
 
   return (
     <Router>
@@ -38,6 +31,7 @@ function App() {
             <Product />
           </Route>
         </Switch>
+        <End/>
       </div>
       </Router>
   );

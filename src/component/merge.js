@@ -16,7 +16,6 @@ export default function Merge(){
             <Body2/>
             <Body3/>
             <Body4/>
-            <End/>
         </div>
     )
 }
