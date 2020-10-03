@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b82784c9ab954f6f4da0dcf3da7f736",
+    "revision": "2f64cda9e722d319d6897e6256565a47",
     "url": "/new-project-cv/index.html"
   },
   {
-    "revision": "38721e00eda07d8c7fc7",
+    "revision": "3ae4076530ee5c0d09d5",
     "url": "/new-project-cv/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "dbf7d5c99a9210320c25",
-    "url": "/new-project-cv/static/css/main.b0f60b53.chunk.css"
+    "revision": "e8fd9d65b339cbc6c947",
+    "url": "/new-project-cv/static/css/main.7e022c67.chunk.css"
   },
   {
-    "revision": "38721e00eda07d8c7fc7",
-    "url": "/new-project-cv/static/js/2.20206072.chunk.js"
+    "revision": "3ae4076530ee5c0d09d5",
+    "url": "/new-project-cv/static/js/2.c572f92b.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/new-project-cv/static/js/2.20206072.chunk.js.LICENSE.txt"
+    "url": "/new-project-cv/static/js/2.c572f92b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dbf7d5c99a9210320c25",
-    "url": "/new-project-cv/static/js/main.0031e73f.chunk.js"
+    "revision": "e8fd9d65b339cbc6c947",
+    "url": "/new-project-cv/static/js/main.339084bc.chunk.js"
   },
   {
     "revision": "279175cc87a49deabb85",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/new-project-cv/static/media/icon7.0634a5ba.png"
   },
   {
+    "revision": "122079e5e8cefcb8f4715efbf9f966b8",
+    "url": "/new-project-cv/static/media/img1.122079e5.jpg"
+  },
+  {
     "revision": "f9fb3d040bf1a53b83e7db9e1483311e",
     "url": "/new-project-cv/static/media/img1.f9fb3d04.jpg"
   },
@@ -56,8 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/new-project-cv/static/media/img10.3bde4d61.jpg"
   },
   {
+    "revision": "823a46cafb813efdd16b663436ac9859",
+    "url": "/new-project-cv/static/media/img10.823a46ca.jpg"
+  },
+  {
+    "revision": "3859a8b2a58dea5f51e9c643c40683ab",
+    "url": "/new-project-cv/static/media/img11.3859a8b2.jpg"
+  },
+  {
     "revision": "88cd09b44635cac5c4fb54cd4e1c73dd",
     "url": "/new-project-cv/static/media/img11.88cd09b4.jpg"
+  },
+  {
+    "revision": "94a2cc6bb892e7aea0e06a0368b8cf01",
+    "url": "/new-project-cv/static/media/img12.94a2cc6b.jpg"
   },
   {
     "revision": "ad00e15c86cf211873234ffacbad1d6a",
@@ -92,6 +108,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/new-project-cv/static/media/img19.177ac4a9.jpg"
   },
   {
+    "revision": "472fd27a07e522ee243000b6577a9b1c",
+    "url": "/new-project-cv/static/media/img2.472fd27a.jpg"
+  },
+  {
     "revision": "2be85befd7f39067ce575c30f011f7b5",
     "url": "/new-project-cv/static/media/img20.2be85bef.jpg"
   },
@@ -124,8 +144,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/new-project-cv/static/media/img3.69d64858.jpg"
   },
   {
+    "revision": "fe6cd4dd8bbe8c86c95d31c3c869da2e",
+    "url": "/new-project-cv/static/media/img3.fe6cd4dd.jpg"
+  },
+  {
+    "revision": "7302715a4f75466eb0ba6ac789a81243",
+    "url": "/new-project-cv/static/media/img4.7302715a.jpg"
+  },
+  {
     "revision": "1cac04aa50f961795d017dfa229d2ff2",
     "url": "/new-project-cv/static/media/img5.1cac04aa.jpg"
+  },
+  {
+    "revision": "2206a9180ac53f6461d67beaf4250610",
+    "url": "/new-project-cv/static/media/img5.2206a918.jpg"
   },
   {
     "revision": "1db7acbc835ebb8aa02acc973a0d8bc6",
@@ -136,11 +168,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/new-project-cv/static/media/img7.8b31b70b.jpg"
   },
   {
+    "revision": "34eb6e823b7cc5c34836cd041ecbc910",
+    "url": "/new-project-cv/static/media/img8.34eb6e82.jpg"
+  },
+  {
     "revision": "d7f3138b3f9c27ca005c06b7ccdc0988",
     "url": "/new-project-cv/static/media/img8.d7f3138b.jpg"
   },
   {
     "revision": "5cafaf969e0191fdfddfca2a37cfc29d",
     "url": "/new-project-cv/static/media/img9.5cafaf96.jpg"
+  },
+  {
+    "revision": "bda7a7c5ea9df6d37f20b6b766e6636a",
+    "url": "/new-project-cv/static/media/img9.bda7a7c5.jpg"
   }
 ]);
