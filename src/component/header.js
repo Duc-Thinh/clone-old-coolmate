@@ -27,7 +27,7 @@ export default () => {
     return(    
             <div className="header">          
                 <div className="narbar">
-                    <Link to="/">
+                    <Link to="/new-project-cv/">
                         <a className="wrap-icon"> 
                             <img className="icon" src="https://coolmate.cdn.vccloud.vn/images/logo-coolmate.svg"/>
                         </a>

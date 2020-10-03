@@ -24,7 +24,7 @@ function App() {
       <div className="App">
         <Header/>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/new-project-cv/">
             <Merge />
           </Route>
           <Route path="/product">
