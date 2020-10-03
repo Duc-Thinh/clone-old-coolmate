@@ -226,12 +226,13 @@
 .box-plus {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .box-plus-1, .box-plus-2{
     width: 16px;
     height: 16px;
-    background-color: #fa6400;
+    background-color: #999;
     margin: 0 5px;
     position: relative;
 }
@@ -254,6 +255,24 @@
     background: white;
     top: 7px;
     left: 0;  
+}
+
+.activeImg {
+    background: #fa6400;
+}
+
+.activeImg-1 {
+    color: #fa6400;
+}
+
+.box-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.changeImg {
+    width: 48%;
 }
 
 
@@ -304,5 +323,9 @@
     .wrap-product-img > span {
         top: 3px;
         right: -65px;
+    }
+
+    .changeImg {
+        width: 90%;
     }
 }

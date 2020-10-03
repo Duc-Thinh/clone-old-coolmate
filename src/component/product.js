@@ -114,13 +114,18 @@ export default function Product(){
                 new: true
             }
         ]
-        },
-        {activeImg : true}
+        }
     )
+
+    const [imgActive, setImgActive] = useState({activeImg : true})
+
+    function active(){
+        return setImgActive({activeImg : !imgActive.activeImg})
+    }
 
     const product = products.products.map((item,index)=>{
         return (
-                <div className="wrap-product">
+                <div className={classNames("wrap-product", {"changeImg": !imgActive.activeImg})}>
                     <div className="wrap-product-img">
                         <img className="product-img" src={item.src}/>
                         <span className={classNames({disNone: !item.new})}>NEW</span>
@@ -160,10 +165,14 @@ export default function Product(){
                 </div>
                 <div className="box-plus">
                     <span className="cart-text-4">Ảnh</span>
-                    <div className="box-plus-1"></div>
-                    <span className="cart-text-5">Nhỏ</span>
-                    <div className="box-plus-2"></div>
-                    <span className="cart-text-6">Lớn</span>
+                    <div className="box-img" onClick={active}>
+                        <div className={classNames("box-plus-1", {"activeImg": imgActive.activeImg})} ></div>
+                        <span className={classNames("cart-text-5", {"activeImg-1": imgActive.activeImg})}>Nhỏ</span>
+                    </div>
+                    <div className="box-img" onClick={active}>
+                        <div className={classNames("box-plus-2", {"activeImg": !imgActive.activeImg})} ></div>
+                        <span className={classNames("cart-text-6", {"activeImg-1": !imgActive.activeImg})}>Lớn</span>
+                    </div>
                 </div>      
             </div>
             <div className="products">
