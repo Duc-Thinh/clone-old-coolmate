@@ -3,117 +3,120 @@ import './style6.css'
 import classNames from 'classnames'
 
 export default function Product(){  
-    const [products, setProducts] = useState({products : [
-        { 
-            src: require('../img-product/img1.jpg'),
-            tittle: "Style Box - kiến tạo phong cách",
-            point: 4.5,
-            newPrice: "599.000",
-            oldPrice: "796.000",
-            discount: 25,
-            new: false
+    const [products, setProducts] = useState(
+        {products : [
+            { 
+                src: require('../img-product/img1.jpg'),
+                tittle: "Style Box - kiến tạo phong cách",
+                point: 4.5,
+                newPrice: "599.000",
+                oldPrice: "796.000",
+                discount: 25,
+                new: false
+            },
+            { 
+                src: require('../img-product/img2.jpg'),
+                tittle: "Chạm là mát box - love at first touch",
+                point: 4.5,
+                newPrice: "359.000",
+                oldPrice: "478.000",
+                discount: 25,
+                new: false
+            },
+            { 
+                src: require('../img-product/img3.jpg'),
+                tittle: "Cool Inside Out Box - chất từ trong ra ngoài",
+                point: 4.5,
+                newPrice: "499.000",
+                oldPrice: "647.000",
+                discount: 23,
+                new: false
+            },
+            { 
+                src: require('../img-product/img4.jpg'),
+                tittle: "Mini box - chuẩn chỉ đẹp trai",
+                point: 5,
+                newPrice: "319.000",
+                oldPrice: "419.000",
+                discount: 24,
+                new: false
+            },
+            { 
+                src: require('../img-product/img5.jpg'),
+                tittle: "Ultra Box - Bứt phá mọi giới hạn",
+                point: 5,
+                newPrice: "369.000",
+                oldPrice: "451.000",
+                discount: 19,
+                new: false
+            },
+            { 
+                src: require('../img-product/img8.jpg'),
+                tittle: "Must Have Item Box",
+                point: 4.5,
+                newPrice: "499.000",
+                oldPrice: "938.000",
+                discount: 22,
+                new: false
+            },
+            { 
+                src: require('../img-product/img8.jpg'),
+                tittle: "Max Ultra Box - Thể thao mỗi ngày",
+                point: 5,
+                newPrice: "399.000",
+                oldPrice: "501.000",
+                discount: 21,
+                new: false
+            },
+            { 
+                src: require('../img-product/img8.jpg'),
+                tittle: "Gentle Box 1 - Lịch lãm không cần nghĩ",
+                point: 4.5,
+                newPrice: "439.000",
+                oldPrice: "508.000",
+                discount: 27,
+                new: false
+            },
+            { 
+                src: require('../img-product/img9.jpg'),
+                tittle: "Gentle Box 1 - Lịch lãm không cần nghĩ",
+                point: 4.5,
+                newPrice: "439.000",
+                oldPrice: "508.000",
+                discount: 27,
+                new: true
+            },
+            { 
+                src: require('../img-product/img10.jpg'),
+                tittle: "Scenery Box 1 - Đi rồi sẽ đến",
+                point: 4.5,
+                newPrice: "399.000",
+                oldPrice: "558.000",
+                discount: 29,
+                new: true
+            },
+            { 
+                src: require('../img-product/img11.jpg'),
+                tittle: "Gentle Box 2 - Lịch lãm không cần nghĩ",
+                point: 4.5,
+                newPrice: "439.000",
+                oldPrice: "598.000",
+                discount: 27,
+                new: true
+            },
+            { 
+                src: require('../img-product/img12.jpg'),
+                tittle: "Scenery Box 2 - Đi rồi sẽ đến",
+                point: 4.5,
+                newPrice: "399.000",
+                oldPrice: "558.000",
+                discount: 29,
+                new: true
+            }
+        ]
         },
-        { 
-            src: require('../img-product/img2.jpg'),
-            tittle: "Chạm là mát box - love at first touch",
-            point: 4.5,
-            newPrice: "359.000",
-            oldPrice: "478.000",
-            discount: 25,
-            new: false
-        },
-        { 
-            src: require('../img-product/img3.jpg'),
-            tittle: "Cool Inside Out Box - chất từ trong ra ngoài",
-            point: 4.5,
-            newPrice: "499.000",
-            oldPrice: "647.000",
-            discount: 23,
-            new: false
-        },
-        { 
-            src: require('../img-product/img4.jpg'),
-            tittle: "Mini box - chuẩn chỉ đẹp trai",
-            point: 5,
-            newPrice: "319.000",
-            oldPrice: "419.000",
-            discount: 24,
-            new: false
-        },
-        { 
-            src: require('../img-product/img5.jpg'),
-            tittle: "Ultra Box - Bứt phá mọi giới hạn",
-            point: 5,
-            newPrice: "369.000",
-            oldPrice: "451.000",
-            discount: 19,
-            new: false
-        },
-        { 
-            src: require('../img-product/img8.jpg'),
-            tittle: "Must Have Item Box",
-            point: 4.5,
-            newPrice: "499.000",
-            oldPrice: "938.000",
-            discount: 22,
-            new: false
-        },
-        { 
-            src: require('../img-product/img8.jpg'),
-            tittle: "Max Ultra Box - Thể thao mỗi ngày",
-            point: 5,
-            newPrice: "399.000",
-            oldPrice: "501.000",
-            discount: 21,
-            new: false
-        },
-        { 
-            src: require('../img-product/img8.jpg'),
-            tittle: "Gentle Box 1 - Lịch lãm không cần nghĩ",
-            point: 4.5,
-            newPrice: "439.000",
-            oldPrice: "508.000",
-            discount: 27,
-            new: false
-        },
-        { 
-            src: require('../img-product/img9.jpg'),
-            tittle: "Gentle Box 1 - Lịch lãm không cần nghĩ",
-            point: 4.5,
-            newPrice: "439.000",
-            oldPrice: "508.000",
-            discount: 27,
-            new: true
-        },
-        { 
-            src: require('../img-product/img10.jpg'),
-            tittle: "Scenery Box 1 - Đi rồi sẽ đến",
-            point: 4.5,
-            newPrice: "399.000",
-            oldPrice: "558.000",
-            discount: 29,
-            new: true
-        },
-        { 
-            src: require('../img-product/img11.jpg'),
-            tittle: "Gentle Box 2 - Lịch lãm không cần nghĩ",
-            point: 4.5,
-            newPrice: "439.000",
-            oldPrice: "598.000",
-            discount: 27,
-            new: true
-        },
-        { 
-            src: require('../img-product/img12.jpg'),
-            tittle: "Scenery Box 2 - Đi rồi sẽ đến",
-            point: 4.5,
-            newPrice: "399.000",
-            oldPrice: "558.000",
-            discount: 29,
-            new: true
-        }
-        
-    ]})
+        {activeImg : true}
+    )
 
     const product = products.products.map((item,index)=>{
         return (
@@ -138,6 +141,8 @@ export default function Product(){
                 </div>
         )
     })
+
+    
 
     return (
         <div className="wrap-cart">

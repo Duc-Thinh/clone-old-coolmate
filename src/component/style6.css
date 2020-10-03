@@ -300,4 +300,9 @@
         width: 100%;
         height: 50px;
     }
+
+    .wrap-product-img > span {
+        top: 3px;
+        right: -65px;
+    }
 }
