@@ -21,6 +21,7 @@
     flex-direction: row;
     font-size: 16px;
     font-weight: 400;
+    position: relative;
 }
 
 .wrap-cart-text-3 {
@@ -34,11 +35,53 @@
 
 .cart-text-3 {
     padding-left: 5px;
+    display: flex;
+    flex-direction: row;	
+    cursor: pointer;
 }
 
-.cart-text-3 {
-    display: flex;
-    flex-direction: row;
+.drop-ul-1 {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    list-style: none;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.drop-ul-1:before {
+    position: absolute;
+    top: -8px;
+    left: 55px;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-left: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    box-shadow: -1px -1px 2px 0 rgba(0,0,0,0.1);
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.drop-li {
+    padding: 5px 10px;
+    background: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drop-li:nth-child(1) {
+    padding-top: 10px;
+}
+
+.drop-li:nth-last-child(1) {
+    padding-bottom: 10px;
+}
+
+.wrap-drop {
+    box-shadow: 0px 0px 10px 0 rgba(0,0,0,0.2);
 }
 
 .cart-text-3:hover .drop-arow-1 {
@@ -77,6 +120,7 @@
 }
 
 .cart-text-3:hover {
+    transition: all 0.3s;
     color: #fa6400;
 }
 
@@ -214,6 +258,8 @@
 }
 
 .chose-product:hover {
+    cursor: pointer;
+    transition: all 0.3s;
     color: white;
     background: #fa6400;
     border: 1px solid #fa6400;
@@ -274,7 +320,6 @@
 .changeImg {
     width: 48%;
 }
-
 
 @media screen and (max-width: 600px) {
     .wrap-cart {
