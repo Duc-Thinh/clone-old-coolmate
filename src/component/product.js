@@ -142,7 +142,7 @@ export default function Product(){
     function sortProduct(key){
         switch(key){
             case "New":
-                setItems({Items: items.Items.reverse()}) 
+                setItems({Items: products.products.reverse()}) 
                 break
             case "topPrice":
                 setItems({Items: products.products.slice(8)}) 
