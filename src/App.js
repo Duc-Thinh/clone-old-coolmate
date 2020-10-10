@@ -9,6 +9,7 @@ import Icon3 from "./icon/icon3.png"
 import classNames from 'classnames'
 import Banner from './component/banner'
 import End from './component/end'
+import CreateCart from './component/createCart'
 
 import {
   BrowserRouter as Router,
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/product">
             <Product />
+          </Route>
+          <Route path="/create-basic-box">
+            <CreateCart />
           </Route>
         </Switch>
         <End/>

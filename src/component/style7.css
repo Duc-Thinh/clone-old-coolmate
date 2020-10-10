@@ -1,0 +1,282 @@
+
+html, body {width: 100%;height: 100%;}
+
+
+.wrap-cart-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-cart {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    padding: 20px 40px 10px;
+}
+
+.img-cart {
+    width: 100%;
+}
+
+.tittle-cart {
+    font-size: 14px;
+    word-wrap: break-word;
+    margin: 20px 0 5px;
+    text-align: center;
+    height: 60px;
+}
+
+.plus {
+    font-size: 20px;
+}
+
+.plus {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    margin: 5px 0;
+}
+
+.plus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background: black;
+}
+
+.plus:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+
+.wrap-plus:hover .plus{
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+.wrap-plus:hover {
+    background-color: #fa6400;
+    color: #fff;
+    border: 1px solid #fa6400;
+}
+
+.wrap-plus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid
+}
+
+.create-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.selection-sort {
+    position: sticky;
+    width: 100rem;
+    height: 100vh;
+    background: blue;
+    top: 0;
+    background-color:#f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,.1);
+    border-radius: 4px;
+}
+
+.content-select {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 40px 10px;
+}
+
+.wrap-content-select-1 {
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-content-select {
+    background: #ebebeb;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.wrap-content-select1:hover .wrap-content-select2-1{
+    cursor: pointer;
+    color: #fa6400;
+}
+
+.wrap-content-select2:hover .wrap-content-select-2-2{
+    cursor: pointer;
+    color: #fa6400;
+}
+
+.wrap-content-select-2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.wrap-content-select-3 {
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.wrap-content-select-4 {
+    color:  #fa6400;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.wrap-content-select-5 {
+    padding: 5px 10px 5px 10px;
+    border-left: 1px solid rgba(0,0,0,.1)
+}
+
+.drop-select {
+    position: absolute;
+    top: 7em;
+    width: 223px;
+    transform: translateY(-2em);
+    transition: all 1s;
+}
+
+.disnone {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all 1s;
+    z-index: -1;
+}
+
+.div-select {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrap-content-select:hover .wrap-content-select-2-3{
+    cursor: pointer;
+    color:  #fa6400;
+}
+
+.img-wrap-content-select {
+    height: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.wrap-cartItem {
+    position: relative;
+}
+
+.item-picked {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    background: #fa6400;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 2px;
+    color: white;
+}
+
+.ul-wrap-select-button {
+    margin-top: 4rem;
+}
+
+.select-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-button:hover .index-item{
+    color: #fa6400;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+    background: #fa6400;
+}
+
+.select-button > img {
+    width: 50px;
+    margin-left: 20px; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.index-item {
+    font-size: 40px;
+}
+
+.tittle-item {
+    font-size: 20px;
+}
+
+.disblock, .disblock2{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .create-box {
+        flex-direction: column;
+    }
+
+    .selection-sort {
+        width: 100vw;
+        height: auto;
+        top: -30px;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .content-select {
+        display: none;
+    }
+
+    .ul-wrap-select-button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .index-item, .tittle-item, .line {
+        display: none;
+    }
+
+    .ul-wrap-select-button {
+        margin-top: 1em;
+    }
+
+    .card-cart {
+        padding-top: 0;
+    }
+}

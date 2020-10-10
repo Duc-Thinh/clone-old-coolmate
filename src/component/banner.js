@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './style2.css'
 import classNames from 'classnames'
 
@@ -21,7 +21,7 @@ export default () => {
     }
 
     const slideBanner = slide.map((item,index)=>{
-        return <img className={classNames('img-banner', {'img-active': item.active})} src={item.url}/>
+        return <img className={classNames("img-banner", {"img-active": item.active})} src={item.url}/>
     })
 
     const button = slide.map((item,index)=>{

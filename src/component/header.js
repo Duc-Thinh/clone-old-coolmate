@@ -41,85 +41,109 @@ export default () => {
                                 </a>
                             </Link>
                             <ul className={classNames('ul',{'active-display' : state.active})}>
-                                <li className="li"> 
-                                    <a href="#">Coolmate Outlet, chỉ từ 39k</a>
-                                    <span className="span">NEW</span>
-                                </li>
+                                <Link to="/product">
+                                    <li className="li"> 
+                                        <a href="#">Coolmate Outlet, chỉ từ 39k</a>
+                                        <span className="span">NEW</span>
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                         <div className={classNames('wrap',{'active-display' : state.active})}> 
-                            <a className={classNames('a',{'active-display' : state.active})} >
-                                TỦ ĐỒ COOLMATE
-                            </a>
+                            <Link to="/product">
+                                <a className={classNames('a',{'active-display' : state.active})} >
+                                    TỦ ĐỒ COOLMATE
+                                </a>
+                            </Link>
                             <span className="tag-span">Mới</span>
                             <ul className={classNames('ul', 'tag-ul', {'active-display' : state.active})}>
-                                <li className="li"> 
-                                    <a href="#" >TỦ ĐỒ COOLMATE</a>
-                                </li>
-                                <li className="li"> 
-                                    <a href="#">TỰ TẠO TỦ ĐỒ CHO RIÊNG BẠN</a>
-                                </li>
+                                <Link to="/product">
+                                    <li className="li"> 
+                                        <a href="#" >TỦ ĐỒ COOLMATE</a>
+                                    </li>
+                                </Link>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#">TỰ TẠO TỦ ĐỒ CHO RIÊNG BẠN</a>
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                         <div className={classNames('wrap',{'active-display' : state.active})}>
-                            <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                                ÁO THUN
-                            </a>
+                            <Link to="/create-basic-box">
+                                <a href="#" className={classNames('a',{'active-display' : state.active})} >
+                                    ÁO THUN
+                                </a>
+                            </Link>
                             <div className="arow"></div>
                             <ul className={classNames('ul',{'active-display' : state.active})}>
-                                <li className="li"> 
-                                    <a href="#" >ÁO POLO</a>
-                                    <span className="span">NEW</span>
-                                </li>
-                                <li className="li"> 
-                                    <a href="#">ÁO THỂ THAO NAM MAXCOOL</a>
-                                </li>
-                                <li className="li"> 
-                                    <a href="#">ÁO COTTON COMPACT PHIÊN BẢN PREMIUM</a>
-                                    <span className="span span-hot">HOT</span>
-                                </li>
-                                <li className="li"> 
-                                    <a href="#">ÁO THUN</a>
-                                </li>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#" >ÁO POLO</a>
+                                        <span className="span">NEW</span>
+                                    </li>
+                                </Link>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#">ÁO THỂ THAO NAM MAXCOOL</a>
+                                    </li>
+                                </Link>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#">ÁO COTTON COMPACT PHIÊN BẢN PREMIUM</a>
+                                        <span className="span span-hot">HOT</span>
+                                    </li>
+                                </Link>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#">ÁO THUN</a>
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                         <div className={classNames('wrap',{'active-display' : state.active})}>
-                            <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                                QUẦN
-                            </a>
+                            <Link to="/create-basic-box">
+                                <a href="#" className={classNames('a',{'active-display' : state.active})} >
+                                    QUẦN
+                                </a>
+                            </Link>
                             <div className="arow"></div>
                             <ul className={classNames('ul', 'tag-ul', {'active-display' : state.active})}>
-                                <li className="li"> 
-                                    <a href="#" >QUẦN LÓT NAM</a>
-                                </li>
-                                <li className="li"> 
-                                    <a href="#">QUẦN SHORT, QUẦN ĐÙI</a>
-                                </li>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#" >QUẦN LÓT NAM</a>
+                                    </li>
+                                </Link>
+                                <Link to="/create-basic-box">
+                                    <li className="li"> 
+                                        <a href="#">QUẦN SHORT, QUẦN ĐÙI</a>
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                         <div className={classNames('wrap',{'active-display' : state.active})}>
-                            <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                                TẤT VỚ
-                            </a>
+                            <Link to="/create-basic-box">
+                                <a href="#" className={classNames('a',{'active-display' : state.active})} >
+                                    TẤT VỚ
+                                </a>
+                            </Link>
                         </div>
                         <div className={classNames('wrap',{'active-display' : state.active})}>
-                            <a href="#" className={classNames('a',{'active-display' : state.active})} >
-                                PHỤ KIỆN
-                            </a>
+                            <Link to="/product">
+                                <a href="#" className={classNames('a',{'active-display' : state.active})}>
+                                    CHỌN SIZE
+                                </a>
+                            </Link>
                         </div>
                         <div className={classNames('wrap',{'active-display' : state.active})}>
-                            <a href="#" className={classNames('a',{'active-display' : state.active})}>
-                                CHỌN SIZE
-                            </a>
-                        </div>
-                        <div className={classNames('wrap',{'active-display' : state.active})}>
-                            <a href="#" className={classNames('a',{'active-display' : state.active})}>
-                                MẶC ĐẸP SỐNG CHẤT
-                            </a>
-                            <span className="tag-span">Mới</span>
+                            <Link to="/product">
+                                <a href="#" className={classNames('a',{'active-display' : state.active})}>
+                                    MẶC ĐẸP SỐNG CHẤT
+                                </a>
+                                <span className="tag-span">Mới</span>
+                            </Link>
                         </div>
                     </div>
-                    <img src={Icon1} className="icon-1"/>
                     <img src={Icon2} className="icon-1"/>
                     <div className="wrap-icon-1">
                         <img src={Icon3} className="icon-1-1"/>
