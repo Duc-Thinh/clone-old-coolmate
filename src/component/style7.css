@@ -1,18 +1,22 @@
 
 html, body {width: 100%;height: 100%;}
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 
 .wrap-cart-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
 }
 
 .card-cart {
     display: flex;
     flex-direction: column;
-    width: 22rem;
+    width: 340px;
     padding: 20px 40px 10px;
 }
 
@@ -86,14 +90,12 @@ html, body {width: 100%;height: 100%;}
 
 .selection-sort {
     position: sticky;
-    width: 100rem;
+    width: 80em;
     height: 100vh;
-    background: blue;
     top: 0;
     background-color:#f8f8f8;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 5px 10px 5px rgba(0,0,0,.1);
     border-radius: 4px;
@@ -247,6 +249,14 @@ html, body {width: 100%;height: 100%;}
 }
 
 @media screen and (max-width: 600px) {
+    .wrap-cart-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        grid-template-columns: none;
+    }
+
     .create-box {
         flex-direction: column;
     }
@@ -278,5 +288,6 @@ html, body {width: 100%;height: 100%;}
 
     .card-cart {
         padding-top: 0;
+        width: 100%;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useState } from 'react'
 import classNames from 'classnames'
 import './style7.css'
 
@@ -204,33 +204,39 @@ export default function CreateCart(){
         {srcImg1: true,
          srcImg2: true,
          srcImg3: true}
-     )
-     let indexNumber = 0
- 
-     let Img1 = srcImg.srcImg1
-     let Img2 = srcImg.srcImg2
-     let Img3 = srcImg.srcImg3
+    )
+    const [draftValues, setDraftValues] = useState(cart.cart.shirt)
+
+    let Img1 = srcImg.srcImg1
+    let Img2 = srcImg.srcImg2
+    let Img3 = srcImg.srcImg3
 
     function loadData(key){
         switch(key) {
             case 'shirts':
                 setShowValue(cart.cart.shirt)
+                setDraftValues(cart.cart.shirt)
                 break
             case 'trouser':
                 setShowValue(cart.cart.trouser)
+                setDraftValues(cart.cart.trouser)
                 break
             case 'socks':
                 setShowValue(cart.cart.socks)
+                setDraftValues(cart.cart.socks)
                 break      
         }
 
     }
-    
 
-  
+    function  sortCart(key){
+        let arrayDraft = showValue.filter((item,index)=>{
+            return(item.price === key)
+        })
+        return setDraftValues(arrayDraft)
+    }
 
-
-    const cartProduct =  showValue.map((item,index)=>{
+    const cartProduct =  draftValues.map((item,index)=>{
         return (
             <div className="card-cart">
                 <img src={item.src} className="img-cart"/>
@@ -245,12 +251,9 @@ export default function CreateCart(){
     })
 
 
-
     function onclickDrop(){      
         return setOndrop({onDrop: !onDrop.onDrop})
     }
-
-
 
     function onMouse(key){
         switch(key) {
@@ -285,13 +288,13 @@ export default function CreateCart(){
                         <img src={require('../icon/ar-down.svg')} className="wrap-content-select-5"/>
                     </div>  
                     <ul className={ classNames("drop-select", {'disnone': onDrop.onDrop})} >
-                        <li className="wrap-content-select wrap-content-select1">
+                        <li className="wrap-content-select wrap-content-select1" onClick={()=>{sortCart(490)}}>
                             <div className="wrap-content-select-1">
                                 <span className="wrap-content-select-2 wrap-content-select2-1">CoolBox</span>
                                 <span className="wrap-content-select-3">từ 10 món chỉ với<span className="wrap-content-select-4"> 490K</span></span>
                             </div>
                         </li>   
-                        <li className="wrap-content-select wrap-content-select2">
+                        <li className="wrap-content-select wrap-content-select2" onClick={()=>{sortCart(650)}}>
                             <div className="wrap-content-select-1">
                                 <span className="wrap-content-select-2 wrap-content-select-2-2">Super CoolBox</span>
                                 <span className="wrap-content-select-3">từ 12 món chỉ với<span className="wrap-content-select-4"> 650K</span></span>

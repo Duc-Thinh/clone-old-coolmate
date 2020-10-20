@@ -3,7 +3,7 @@ import './style6.css'
 import classNames from 'classnames'
 
 export default function Product(){  
-    const [products, setProducts] = useState(
+    const [products] = useState(
         {products : [
             { 
                 src: require('../img-product/img1.jpg'),
@@ -157,7 +157,7 @@ export default function Product(){
                     return(b.newPrice - a.newPrice)
                 })})
                 break
-            case "discount":
+            default :
                 setItems({Items : products.products.sort(function(a,b){
                     return(b.discount - a.discount)
                 })})

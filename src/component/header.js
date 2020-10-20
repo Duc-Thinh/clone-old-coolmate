@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import './style1.css'
-import Icon1 from "../icon/icon1.png"
 import Icon2 from "../icon/icon2.png"
 import Icon3 from "../icon/icon3.png"
 import classNames from 'classnames'
-import Product from './product'
-import Banner from './banner'
 
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link
   } from "react-router-dom";
 
