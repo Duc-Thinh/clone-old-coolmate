@@ -33,14 +33,24 @@ html, body {width: 100%;height: 100%;}
 }
 
 .plus {
+    display: flex;
     font-size: 20px;
-}
-
-.plus {
     width: 22px;
     height: 22px;
     position: relative;
     margin: 5px 0;
+}
+
+.selectCart {
+    color: #fa6400;
+    position: absolute;
+    visibility: hidden;
+}
+
+.wrap-plus:hover .selectCart{
+    color: white;
+    transition: all 2s;
+    visibility: visible;
 }
 
 .plus:before {
@@ -66,6 +76,7 @@ html, body {width: 100%;height: 100%;}
 .wrap-plus:hover .plus{
     transform: rotate(90deg);
     transition: all 0.5s;
+    visibility: hidden;
 }
 
 .wrap-plus:hover {
@@ -79,7 +90,13 @@ html, body {width: 100%;height: 100%;}
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.plusOff {
+    /* display: none; */
+    visibility: hidden;
 }
 
 .create-box {
@@ -248,6 +265,14 @@ html, body {width: 100%;height: 100%;}
     display: none;
 }
 
+.activeFalse {
+    display: none;
+}
+
+.activeTrue {
+    display: block;
+}
+
 @media screen and (max-width: 600px) {
     .wrap-cart-2 {
         display: flex;
@@ -289,5 +314,24 @@ html, body {width: 100%;height: 100%;}
     .card-cart {
         padding-top: 0;
         width: 100%;
+    }
+
+    .plus {
+        visibility: hidden;
+    }
+
+    .wrap-plus {
+        background-color: #fa6400;
+        border: 1px solid #fa6400;
+    }
+
+    .selectCart {
+        visibility: visible;
+        color: white;
+    }
+
+    .wrap-cartItem {
+        position: fixed;
+        right: 7%;
     }
 }

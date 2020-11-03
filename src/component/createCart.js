@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import classNames from 'classnames'
 import './style7.css'
 
-export default function CreateCart(){
+export default function CreateCart({ carts, addcart }){
 
     const [cart, setCart] = useState({cart : 
         {shirt: 
@@ -196,15 +196,17 @@ export default function CreateCart(){
             ]
         }
     })
-
+    
     const [showValue, setShowValue] = useState(cart.cart.shirt)
 
-    const [onDrop, setOndrop] = useState({onDrop: true})
+    const [onDrop, setOndrop] = useState({onDrop: true, onMouseOver: false})
+
     const [srcImg, setSrcImg] = useState(
         {srcImg1: true,
          srcImg2: true,
          srcImg3: true}
     )
+
     const [draftValues, setDraftValues] = useState(cart.cart.shirt)
 
     let Img1 = srcImg.srcImg1
@@ -236,6 +238,23 @@ export default function CreateCart(){
         return setDraftValues(arrayDraft)
     }
 
+    function putProductToCart(item){
+        const findCart = carts.find( items => items === item)
+        if(!findCart){
+            return addcart(item)
+        }
+        return 
+    }
+
+    function mouseOverPlus(value){
+        if(value === 1){
+            return setTimeout(() => {
+                setOndrop({onDrop: onDrop.onDrop, onMouseOver: !onDrop.onMouseOver})
+            }, 500);
+        }
+        return setOndrop({onDrop: onDrop.onDrop, onMouseOver: !onDrop.onMouseOver})
+    }
+
     const cartProduct =  draftValues.map((item,index)=>{
         return (
             <div className="card-cart">
@@ -245,6 +264,7 @@ export default function CreateCart(){
                 </span>
                 <div className="wrap-plus">
                     <div className="plus"></div>
+                    <div onClick={ () => putProductToCart(item) } className="selectCart">chọn mua</div>
                 </div>
             </div>
         )
@@ -303,7 +323,7 @@ export default function CreateCart(){
                     </ul>
                     <div className="wrap-cartItem">
                         <img src={require('../icon/cart.png')} className="img-wrap-content-select"/>
-                        <div className="item-picked">0</div>
+                        <div className="item-picked">{carts.length}</div>
                     </div>
                 </div>
                 <ul className="ul-wrap-select-button">

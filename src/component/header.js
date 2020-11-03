@@ -140,10 +140,12 @@ export default () => {
                         </div>
                     </div>
                     <img src={Icon2} className="icon-1"/>
-                    <div className="wrap-icon-1">
-                        <img src={Icon3} className="icon-1-1"/>
-                        <span>Giỏ Hàng</span>
-                    </div>
+                    <Link to="/cart">
+                        <div className="wrap-icon-1">
+                            <img src={Icon3} className="icon-1-1"/>
+                            <span>Giỏ Hàng</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
     )
