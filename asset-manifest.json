@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/new-project-cv/static/css/main.e04011af.chunk.css",
-    "main.js": "/new-project-cv/static/js/main.57cdf9ae.chunk.js",
-    "main.js.map": "/new-project-cv/static/js/main.57cdf9ae.chunk.js.map",
+    "main.css": "/new-project-cv/static/css/main.3a5047e6.chunk.css",
+    "main.js": "/new-project-cv/static/js/main.87458f17.chunk.js",
+    "main.js.map": "/new-project-cv/static/js/main.87458f17.chunk.js.map",
     "runtime-main.js": "/new-project-cv/static/js/runtime-main.3e48c9e5.js",
     "runtime-main.js.map": "/new-project-cv/static/js/runtime-main.3e48c9e5.js.map",
     "static/css/2.11829350.chunk.css": "/new-project-cv/static/css/2.11829350.chunk.css",
-    "static/js/2.dc7d9bc2.chunk.js": "/new-project-cv/static/js/2.dc7d9bc2.chunk.js",
-    "static/js/2.dc7d9bc2.chunk.js.map": "/new-project-cv/static/js/2.dc7d9bc2.chunk.js.map",
+    "static/js/2.559b80ce.chunk.js": "/new-project-cv/static/js/2.559b80ce.chunk.js",
+    "static/js/2.559b80ce.chunk.js.map": "/new-project-cv/static/js/2.559b80ce.chunk.js.map",
     "index.html": "/new-project-cv/index.html",
-    "precache-manifest.f497206d9c9b8d77b3ae6c53bb6d3744.js": "/new-project-cv/precache-manifest.f497206d9c9b8d77b3ae6c53bb6d3744.js",
+    "precache-manifest.38bebad276ad71742b324886e171a40a.js": "/new-project-cv/precache-manifest.38bebad276ad71742b324886e171a40a.js",
     "service-worker.js": "/new-project-cv/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/new-project-cv/static/css/2.11829350.chunk.css.map",
-    "static/css/main.e04011af.chunk.css.map": "/new-project-cv/static/css/main.e04011af.chunk.css.map",
-    "static/js/2.dc7d9bc2.chunk.js.LICENSE.txt": "/new-project-cv/static/js/2.dc7d9bc2.chunk.js.LICENSE.txt",
+    "static/css/main.3a5047e6.chunk.css.map": "/new-project-cv/static/css/main.3a5047e6.chunk.css.map",
+    "static/js/2.559b80ce.chunk.js.LICENSE.txt": "/new-project-cv/static/js/2.559b80ce.chunk.js.LICENSE.txt",
     "static/media/ar-down.svg": "/new-project-cv/static/media/ar-down.fd5051ae.svg",
     "static/media/icon2.png": "/new-project-cv/static/media/icon2.3f91d11b.png",
     "static/media/icon3.png": "/new-project-cv/static/media/icon3.231da894.png",
@@ -71,8 +71,8 @@
   "entrypoints": [
     "static/js/runtime-main.3e48c9e5.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.dc7d9bc2.chunk.js",
-    "static/css/main.e04011af.chunk.css",
-    "static/js/main.57cdf9ae.chunk.js"
+    "static/js/2.559b80ce.chunk.js",
+    "static/css/main.3a5047e6.chunk.css",
+    "static/js/main.87458f17.chunk.js"
   ]
 }
