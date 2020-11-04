@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './component/header'
 import Merge from './component/merge'
 import Product from './component/product'
-import Carts from './component/carts'
+import Carts from './containers/carts'
 import './component/style1.css'
 import End from './component/end'
 import CreateCart from './containers/createCart'

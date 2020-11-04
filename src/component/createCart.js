@@ -262,9 +262,9 @@ export default function CreateCart({ carts, addcart }){
                 <span className="tittle-cart">
                     {item.tittle}
                 </span>
-                <div className="wrap-plus">
+                <div onClick={() => putProductToCart(item)} className="wrap-plus">
                     <div className="plus"></div>
-                    <div onClick={ () => putProductToCart(item) } className="selectCart">chọn mua</div>
+                    <div className="selectCart">chọn mua</div>
                 </div>
             </div>
         )
