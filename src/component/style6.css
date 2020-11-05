@@ -135,7 +135,7 @@
 .wrap-product{
     width: 24%;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .wrap-product-img {
@@ -321,6 +321,11 @@
     width: 48%;
 }
 
+.wrap-cartItem {
+    width: 80px;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .wrap-cart {
         width: 100%;
@@ -372,5 +377,10 @@
 
     .changeImg {
         width: 90%;
+    }
+
+    .wrap-cartItem {
+        z-index: 10;
+        top: 8%;
     }
 }

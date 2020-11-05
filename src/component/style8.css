@@ -4,7 +4,7 @@
 }
 
 .wrap-carts {
-    margin-top: 80px;
+    margin-top: 120px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,11 +24,17 @@
     display: flex;
     flex-direction: row;
     width: 70%;
-    margin-top: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.wrap-img-carts {
+    border-radius: 20px;   
+    overflow: hidden;
 }
 
 .img-carts {
-    width: 10em;
+    width: 170px;
 }
 
 .note-carts, .price-carts {
@@ -40,29 +46,43 @@
 
 .title-carts {
     font-weight: 500;
+    font-family: sans-serif;
+    padding: 2px;
 }
 
 .content-carts {
     text-align: center;
+    padding: 10px 20px 0;
+}
+
+.content-price-carts {
+    padding: 10px 20px 0;
+}
+
+.content-delete-carts {
+    margin-top: 20px;
+    text-align: center;
+    background: lightskyblue;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .finish-carts {
     position: absolute;
     right: 22%;
-    border-radius: 80px;
+    top: 70px;
+    border-radius: 100px;
     color: white;
     border: none;
     overflow: hidden;
     background: transparent; 
-    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.4);
 }
 
 .title-finish-carts {
-    padding: 10px;
+    padding: 15px;
     position: relative;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .title-finish-carts:after {
@@ -72,8 +92,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(255,145,144,1) 0%, rgba(253,192,148,1) 100%);
-    background-size: 300%;
+    background: linear-gradient(90deg, rgba(235,163,111,1) 0%, rgba(222,105,104,1) 50%, rgba(235,163,111,1) 100%);
+    background-size: 200%;
     transition: 0.5s;
     animation: animate 10s linear infinite;
     z-index: -1;
@@ -86,7 +106,7 @@
     }
     50%
     {
-        background-position: 350% 0;
+        background-position: 450% 0;
     }
     100%
     {
@@ -96,4 +116,43 @@
 
 button:focus {
     outline: 0;
+}
+
+.delete-carts-none {
+    display: none;
+}
+
+@media screen and (max-width: 600px) { 
+    .card-carts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finish-carts {
+        position: fixed;
+    }
+
+    .img-carts {
+        width: 15em;
+    }
+
+    .title-carts, .title-delete-carts {
+        display: none;
+    }
+
+    .content-delete-carts{
+        width: 70px;
+    }
+
+    .note-carts {
+        width: 100%;
+    }
+
+    .title-price-carts {
+        margin-top: 10px;
+        color: #fa6400;
+        width: 30px;
+        text-align: center;
+    }
 }

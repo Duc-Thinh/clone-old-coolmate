@@ -1,8 +1,13 @@
 import { connect } from "react-redux";
 import Cartss from "../component/carts"
+import { deletecart } from "../redux/reducer"
 
 const mapStateToProps = state =>({
     carts: state.add.items
 })
 
-export default connect(mapStateToProps)(Cartss)
+const mapActionsToProps = {
+    deletecart
+};
+
+export default connect(mapStateToProps,mapActionsToProps)(Cartss)

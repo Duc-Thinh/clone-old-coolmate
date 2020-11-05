@@ -139,7 +139,7 @@ export default () => {
                             </Link>
                         </div>
                     </div>
-                    <img src={Icon2} className="icon-1"/>
+                    <div className="flex-grow"></div>
                     <Link to="/cart">
                         <div className="wrap-icon-1">
                             <img src={Icon3} className="icon-1-1"/>

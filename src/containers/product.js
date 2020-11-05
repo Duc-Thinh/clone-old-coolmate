@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import createCart from "../component/createCart"
+import product from "../component/product"
 import { addcart } from "../redux/reducer"
 
 const mapStateToProps = state =>({
@@ -10,4 +10,4 @@ const mapActionsToProps = {
     addcart
 };
 
-export default connect(mapStateToProps,mapActionsToProps)(createCart)
+export default connect(mapStateToProps,mapActionsToProps)(product)

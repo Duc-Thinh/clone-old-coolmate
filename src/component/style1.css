@@ -137,6 +137,8 @@ a {
     top: 5px;
 }
 
+
+
 .arow:before {
     content: '';
     position: absolute;
@@ -174,7 +176,6 @@ a {
     flex-direction: column;
     align-items: center;
     height: 60px;
-    margin: 0 15px;
     background: black;
     padding: 0 5px;
     cursor: pointer;
@@ -209,6 +210,11 @@ a {
         height: 10%;
         background:  #fa6400;
         border-radius: 2px;
+    }
+
+    .flex-grow {
+        display: flex;
+        flex-grow: 1;
     }
 
     .menu-dropdown:after {
@@ -264,6 +270,10 @@ a {
         display: none;
     }
 
+    .icon {
+        margin-left: 45%;
+    }
+
     .icon-1 {
         margin-left: 10px;
     }
@@ -289,10 +299,6 @@ a {
 
     .active-display {
         display: block;
-    }
-
-    .wrap-icon-1 {
-        margin-left: 30px;
     }
 
     .wrap-icon {

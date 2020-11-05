@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import './style6.css'
 import classNames from 'classnames'
 
-export default function Product(){  
+export default function Product({carts, addcart}){  
     const [products] = useState(
         {products : [
             { 
                 src: require('../img-product/img1.jpg'),
                 tittle: "Style Box - kiến tạo phong cách",
                 point: 4.5,
-                newPrice: 599,
+                price: 599,
                 oldPrice: 796,
                 discount: 25,
                 new: false
@@ -18,7 +18,7 @@ export default function Product(){
                 src: require('../img-product/img2.jpg'),
                 tittle: "Chạm là mát box - love at first touch",
                 point: 4.5,
-                newPrice: 359,
+                price: 359,
                 oldPrice: 478,
                 discount: 25,
                 new: false
@@ -27,7 +27,7 @@ export default function Product(){
                 src: require('../img-product/img3.jpg'),
                 tittle: "Cool Inside Out Box - chất từ trong ra ngoài",
                 point: 4.5,
-                newPrice: 499,
+                price: 499,
                 oldPrice: 647,
                 discount: 23,
                 new: false
@@ -36,7 +36,7 @@ export default function Product(){
                 src: require('../img-product/img4.jpg'),
                 tittle: "Mini box - chuẩn chỉ đẹp trai",
                 point: 5,
-                newPrice: 319,
+                price: 319,
                 oldPrice: 419,
                 discount: 24,
                 new: false
@@ -45,7 +45,7 @@ export default function Product(){
                 src: require('../img-product/img5.jpg'),
                 tittle: "Ultra Box - Bứt phá mọi giới hạn",
                 point: 5,
-                newPrice: 369,
+                price: 369,
                 oldPrice: 451,
                 discount: 19,
                 new: false
@@ -54,7 +54,7 @@ export default function Product(){
                 src: require('../img-product/img8.jpg'),
                 tittle: "Must Have Item Box",
                 point: 4.5,
-                newPrice: 499,
+                price: 499,
                 oldPrice: 938,
                 discount: 22,
                 new: false
@@ -63,7 +63,7 @@ export default function Product(){
                 src: require('../img-product/img8.jpg'),
                 tittle: "Max Ultra Box - Thể thao mỗi ngày",
                 point: 5,
-                newPrice: 399,
+                price: 399,
                 oldPrice: 501,
                 discount: 21,
                 new: false
@@ -72,7 +72,7 @@ export default function Product(){
                 src: require('../img-product/img8.jpg'),
                 tittle: "Gentle Box 1 - Lịch lãm không cần nghĩ",
                 point: 4.5,
-                newPrice: 439,
+                price: 439,
                 oldPrice: 508,
                 discount: 27,
                 new: false
@@ -81,7 +81,7 @@ export default function Product(){
                 src: require('../img-product/img9.jpg'),
                 tittle: "Gentle Box 1 - Lịch lãm không cần nghĩ",
                 point: 4.5,
-                newPrice: 439,
+                price: 439,
                 oldPrice: 508,
                 discount: 27,
                 new: true
@@ -90,7 +90,7 @@ export default function Product(){
                 src: require('../img-product/img10.jpg'),
                 tittle: "Scenery Box 1 - Đi rồi sẽ đến",
                 point: 4.5,
-                newPrice: 399,
+                price: 399,
                 oldPrice: 558,
                 discount: 29,
                 new: true
@@ -99,7 +99,7 @@ export default function Product(){
                 src: require('../img-product/img11.jpg'),
                 tittle: "Gentle Box 2 - Lịch lãm không cần nghĩ",
                 point: 4.5,
-                newPrice: 439,
+                price: 439,
                 oldPrice: 598,
                 discount: 27,
                 new: true
@@ -108,7 +108,7 @@ export default function Product(){
                 src: require('../img-product/img12.jpg'),
                 tittle: "Scenery Box 2 - Đi rồi sẽ đến",
                 point: 4.5,
-                newPrice: 399,
+                price: 399,
                 oldPrice: 558,
                 discount: 29,
                 new: true
@@ -149,12 +149,12 @@ export default function Product(){
                 break
             case "lowToHigh":
                 setItems({Items : products.products.sort(function(a,b){
-                    return(a.newPrice - b.newPrice)
+                    return(a.price - b.price)
                 })})
                 break
             case "highToLow":
                 setItems({Items : products.products.sort(function(a,b){
-                    return(b.newPrice - a.newPrice)
+                    return(b.price - a.price)
                 })})
                 break
             default :
@@ -182,11 +182,11 @@ export default function Product(){
                         <div className="star-product"></div>
                     </div>
                     <div className="wrap-price-product">
-                        <span className="price-product-1">{item.newPrice}.000đ</span>
+                        <span className="price-product-1">{item.price}.000đ</span>
                         <span className="price-product-2">{item.oldPrice}.000đ</span>
                         <span className="discount-product">-{item.discount}%</span>
                     </div>
-                    <div className="chose-product">chọn mua</div>               
+                    <div className="chose-product" onClick={()=>addcart(item)}>chọn mua</div>               
                 </div>
         )
     })
@@ -227,6 +227,10 @@ export default function Product(){
                     </div>
                 </div>      
             </div>
+            <div className="wrap-cartItem">
+                        <img src={require('../icon/cart.png')} className="img-wrap-content-select"/>
+                        <div className="item-picked">{carts.length}</div>
+                    </div>
             <div className="products">
                 {product}
             </div>

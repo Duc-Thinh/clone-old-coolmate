@@ -270,11 +270,6 @@ export default function CreateCart({ carts, addcart }){
         )
     })
 
-
-    function onclickDrop(){      
-        return setOndrop({onDrop: !onDrop.onDrop})
-    }
-
     function onMouse(key){
         switch(key) {
             case 1:
@@ -300,7 +295,7 @@ export default function CreateCart({ carts, addcart }){
             <div className="selection-sort">
                 <span className="content-select">TẠO BASIC BOX</span>
                 <div className="div-select">
-                    <div className="wrap-content-select" onClick={onclickDrop}>
+                    <div className="wrap-content-select" onClick={()=>{setOndrop({onDrop: !onDrop.onDrop})}}>
                         <div className="wrap-content-select-1">
                             <span className="wrap-content-select-2 wrap-content-select-2-3">CoolBox</span>
                             <span className="wrap-content-select-3">từ 10 món chỉ với<span className="wrap-content-select-4"> 490K</span></span>

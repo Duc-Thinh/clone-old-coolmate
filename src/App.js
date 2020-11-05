@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './component/header'
 import Merge from './component/merge'
-import Product from './component/product'
+import Product from './containers/product'
 import Carts from './containers/carts'
 import './component/style1.css'
 import End from './component/end'
